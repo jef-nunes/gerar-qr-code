@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bg-video {
+    min-width: 100%;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    object-fit: cover;
+}
+
+#central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(41, 67, 96, 0.238);
+    padding: 15px;
+    border-radius: 15px;
+    height: fit-content;
+    width: fit-content;
+   /* box-shadow: 0px 0px 5px hwb(193 0% 4%); */
+}
+
+#central button {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px #000000;
+    font-size: 16px;
+    background-color: rgb(95, 95, 95);
+    border-radius: 7px;
+    border-style: solid;
+    border-color: rgb(119, 119, 119);
+    padding: 5px;
+}
+
+#title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+#title-container h1 {
+    font-size: 40px;
+    user-select: none;
+    color: rgb(255, 255, 255);
+    font-family: "Chakra Petch";
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+#user-inp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+#user-inp {
+    outline: none;
+    color: azure;
+    background-color: #1e2d48;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #141929;
+    height: 40px;
+    width: 80%;
+    padding-left: 10px;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#user-inp:hover {
+    opacity: 0.95;
+}
+
+#bt-gerar {
+    width: fit-content;
+    height: fit-content;
+    opacity: 1;
+}
+
+#bt-gerar:hover {
+    opacity: 0.95;
+    cursor: pointer;
+}
+
+#qr-code-area {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: rgb(0, 147, 201);
+    border-radius: 7px;
+    height: fit-content;
+    width: fit-content;
+}
